@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+src/**
+node_modules/.package-lock.json
+node_modules/@types/**
+node_modules/typescript/**
+node_modules/esbuild/**
+node_modules/@vscode/vsce/**
+tsconfig.json
+**/*.map
+**/*.ts
+!dist/**
+!node_modules/sharp/**
+!node_modules/@img/**

@@ -1,0 +1,64 @@
+{
+  "name": "img2webp",
+  "displayName": "img2webp",
+  "description": "右键图片一键转换为 WebP 格式",
+  "version": "0.1.0",
+  "publisher": "Mercury",
+  "author": "Mercury",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "img2webp.convert",
+        "title": "转换为 WebP",
+        "icon": "assets/icon.png"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "img2webp.convert",
+          "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif|bmp|tiff|tif|avif)$/i",
+          "group": "conversion"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "img2webp",
+      "properties": {
+        "img2webp.quality": {
+          "type": "number",
+          "default": 75,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "WebP 输出质量 (1-100)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "esbuild": "^0.20.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
