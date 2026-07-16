@@ -5,7 +5,7 @@ VS Code 扩展 — 右键图片一键转换为 WebP 格式。
 ## 功能
 
 - 在资源管理器中右键图片文件，选择「转换为 WebP」
-- 使用 [sharp](https://github.com/lovell/sharp) 进行真实的 WebP 编码（非改后缀）
+- 使用 [sharp](https://github.com/lovell/sharp) 进行 WebP 编码
 - 转换完成后自动删除原图
 - 支持格式：PNG、JPG、JPEG、GIF、BMP、TIFF、AVIF
 - 可在设置中调整输出质量（默认 75）
