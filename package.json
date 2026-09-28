@@ -1,6 +1,6 @@
 {
-  "name": "img2webp-converter",
-  "displayName": "img2webp-converter",
+  "name": "img2webp-convert",
+  "displayName": "img2webp-convert",
   "description": "右键图片一键转换为 WebP 格式",
   "version": "0.1.0",
   "publisher": "Mercury",
