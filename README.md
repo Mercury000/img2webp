@@ -27,7 +27,7 @@ VS Code 扩展 — 右键图片一键转换为 WebP 格式。
 ### 从 VSIX 安装
 
 ```bash
-code --install-extension img2webp-0.1.0.vsix
+code --install-extension img2webp-convert-0.1.1.vsix
 ```
 
 ### 从源码构建
@@ -38,7 +38,7 @@ cd img2webp
 npm install
 npm run build
 npx vsce package
-code --install-extension img2webp-0.1.0.vsix
+code --install-extension img2webp-convert-0.1.1.vsix
 ```
 
 ## License
