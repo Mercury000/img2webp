@@ -33,7 +33,7 @@ code --install-extension img2webp-0.1.0.vsix
 ### 从源码构建
 
 ```bash
-git clone https://github.com/Mercury/img2webp.git
+git clone https://github.com/Mercury000/img2webp.git
 cd img2webp
 npm install
 npm run build
